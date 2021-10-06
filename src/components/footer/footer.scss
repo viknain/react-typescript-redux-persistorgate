@@ -1,0 +1,85 @@
+@import '../../assets/scss/index';
+#footer {
+  background: $banner-text;
+  background: #343473;
+  @include padding(40px, 40px, 0, 0);
+  @include media-breakpoint-up(md) {
+    @include padding(36px, 28px, 0, 0);
+  }
+  width: 100%;
+  p {
+    font-size: 0.85rem;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.25rem;
+    }
+  }
+  .footerrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .half-width-img {
+    @include half-width;
+    text-align: left;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      padding-right: 6rem;
+    }
+    img {
+      max-width: 200px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .steps {
+      color: $primary-button-color;
+      font-size: 14px;
+    }
+  }
+  .copyrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    .copyleft p {
+      font-size: 13px;
+      color: #fff;
+      opacity: 0.7;
+      margin-bottom: 0;
+    }
+    .copyright {
+      a {
+        font-size: 13px;
+        color: #fff;
+        opacity: 0.7;
+        text-decoration: none;
+      }
+    }
+  }
+  .half-width {
+    @include half-width;
+    position: relative;
+    margin-bottom: 20px;
+     a {
+        font-size: 18px;
+        margin-right: 40px;
+        color: #fff;
+        text-decoration: none;
+      }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      padding-left: 6rem;
+      text-align: right;
+      a {
+        font-size: 18px;
+        margin-left: 40px;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 0;
+      }
+    }
+  }
+}

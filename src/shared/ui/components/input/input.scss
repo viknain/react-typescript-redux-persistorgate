@@ -1,0 +1,15 @@
+@import "../../../../assets/scss/index";
+input {
+    background: $white;
+    height: 60px;
+    @include border-radius(6px);
+    min-width: 180px;
+    display: block;
+    @include media-breakpoint-up(lg) {
+        min-width: 406px;
+    }
+    padding: 10px 15px;
+    @include padding (10px, 10px, 15px, 15px);
+    margin-right: 15px;
+    border: 2px solid #222222;
+}

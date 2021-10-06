@@ -1,0 +1,54 @@
+@import '../../../assets/scss/index';
+#map-area {
+  background: $banner-bg;
+  color: $white;
+  @include padding(20px, 0, 0, 0);
+  margin-top: 30px;
+  @include media-breakpoint-up(md) {
+    @include padding(40px, 70px, 0, 0);
+  }
+  width: 100%;
+  h2 {
+    color: $white;
+    font-size: 28px;
+  }
+  p {
+    font-size: 0.85rem;
+    color: $white;
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+  }
+  .full-width {
+    @include full-width;
+    text-align: left;
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .tyu {
+    text-transform: uppercase;
+    color: $orange;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .dmap {
+  
+     @include media-breakpoint-down(md) {
+        display: none !important;
+    }
+}
+.mobilemap {
+    display: none !important;
+       @include media-breakpoint-down(md) {
+        display: block !important;
+    }
+}
+}
