@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
-import locationReducer from './location-reducer';
-
+import whiteListReducer from './whitelist-reducer';
+import blackListReducer from './blacklist-reducer'
 
 const rootReducer = combineReducers({
-  location: locationReducer,
+  savedCounter: whiteListReducer,
+  unSavedCounter: blackListReducer,
 });
 
 export default rootReducer;

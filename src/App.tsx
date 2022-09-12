@@ -1,26 +1,22 @@
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter as Router, 
   Route,
 } from 'react-router-dom';
 import { routes } from './routes/routes';
-import Layout from './components/layout';
+import Layout from './components/Layout/Layout';
 const App: React.FC<any> = () => {
   return (
     <Router>
       <Layout>
-        <Switch>
+        <div>
           {routes.staticrotes.map((route, index) => (
             <Route
               key={index}
               path={route.path}
-              exact={route.exact}
-              component={() => (
-                <route.component />
-              )}
+              component={()=><route.component />}
             />
           ))}
-        </Switch>
+        </div>
       </Layout>
     </Router>
   );
